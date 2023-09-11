@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .bg{
+            background-image: url(./asset2/background.png);
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-size: cover;
+           
+        }
+        body{
+            background-color: whitesmoke;
+        }
+        .navb{
+            color: aliceblue;
+        }
+        .i{
+            display: inline-block;
+        }
+        .i1{
+            margin-left: 15%;
+        }
+        .i2{
+            margin-left: 5%;
+            margin-right: 2%;
+        }
+        .i4{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .box{
+            margin-left: 30%;
+            background-color: rgba(49, 103, 250, 0.929);
+            width: 120px;
+            height: 30px;
+            padding-top: 15px;
+            padding-left: 15px;
+            border-radius: 5px;
+        }
+        .form1{
+            background-color: #fff;
+            width: 25%;
+            float: right;
+            margin-right: 13%;
+            border: 0px;
+            border-radius: 10px;
+            margin-top: 3%;
+        }
+        .f1{
+            text-align: center;
+        }
+        .f2{
+            margin-left: 10%;
+        }
+        .f3{
+            margin-left: 10%;
+            width: 80%;
+            height: 30px;
+        }
+        .button1{
+            text-align: center;
+            background-color: rgba(49, 103, 250, 0.929);
+            color: #fff;
+            width: 70%;
+            height: 35px;
+            margin-top: 12%;
+            margin-left: 15%;
+            padding-top: 15px;
+            border-radius: 5px;
+        }
+        .b{
+            color: #fff;
+            margin-left: 15%;
+        }
+        .b1{
+            font-size: 50px;
+            margin-top: 15%;
+        }
+        .b2{
+            font-size: 15px;
+        }
+        .b3{
+            text-align: center;
+            display: inline-block;
+            background-color: rgba(49, 103, 250, 0.929);
+            width: 10%;
+            height: 35px;
+            border-radius: 30px;
+            padding-top: 15px;
+        }
+        .b4{
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            width: 10%;
+            border: 1px solid white;
+            height: 35px;
+            border-radius: 30px;
+            padding-top: 15px;
+            margin-left: 1%;
+        }
+        .a1{
+            text-align: center;
+            margin-top: 5%;
+            font-size: 50px;
+        }
+        .a2{
+            text-align: center;
+            font-weight: lighter;
+            margin-top: -1.5%;
+        }
+        .block{
+            display: flex;
+            justify-content: center;
+            gap: 7%;
+            margin-top: 10%;
+        }
+        .blue{
+            background-color: rgb(96, 172, 244);
+            width: 240px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            
+        }
+        .im{
+            display: inline-block;
+            border-radius: 50%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+           
+        }
+        .b12{
+            display: inline-block;
+            color: #fff;
+            padding-top: 8%;
+           
+            
+        }
+        .white{
+            border: 1px solid rgb(96, 172, 244);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .data{
+            padding-left: 10%;
+        }
+        .datab{
+            color: rgb(13, 131, 241);
+        }
+        .checked{
+            background-color: #e23e3e;
+        }
+       .s{
+        display: inline-block;
+       }
+       .s1{
+        font-size: 25px;
+        color: rgb(255, 215, 0);
+       }
+       .rating{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        
+       }
+       .rating1{
+        border: 1px rgb(225, 220, 220) solid;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 15px;
+        background-color: #fff;
+       }
+       .s2{
+        margin-top: -15px;
+       }
+       .arrow{
+        color: blue;
+        font-size: 30px;
+        display: inline;
+       }
+       .gr{
+        margin-left: 13%;
+        margin-top: 6%;
+        margin-bottom: 8%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto)
+        
+       }
+       .gr2{
+        display: inline;
+        margin-left: 15px;
+       }
+       .gr3{
+        margin-top: -3px;
+        margin-left: 35px;
+       }
+       .gr4{
+        margin-top: -5px;
+        color: grey;
+        margin-left: 35px;
+       }
+       .price{
+        display: flex;
+        gap: 1px;
+
+        justify-content: center;
+        align-items: end;
+       }
+       .trans{
+        border: 1px blue solid;
+        border-radius: 10px;
+        width: 250px;
+        height: 530px;
+        text-align: center;
+       }
+       .violet{
+        border: 1px blue solid;
+        border-radius: 10px;
+        background-color: rgb(4, 4, 52);
+        color: #fff;
+        width: 250px;
+        height: 560px;
+        text-align: center;
+       }
+       .ze{
+        display: inline-block;
+        color: rgb(13, 131, 241);
+
+       }
+       .ze1{
+        display: inline-block;
+        text-align: start;
+        color: rgb(13, 131, 241);
+       }
+       .green{
+        display: inline-block;
+        border-radius: 50%;
+        background-color: green;
+        padding: 2%;
+        color: white;
+        margin-top: -5px;
+       }
+       .g1{
+        display: inline-block;
+        margin-top: -5px;
+       }
+       .g2{
+        display: inline-block;
+        margin-top: -5px;
+        padding-right: 15.5%;
+       }
+       .g3{
+        padding-right: 10%;
+       }
+       .grey{
+        display: inline-block;
+        border-radius: 50%;
+        background-color: grey;
+        padding: 2%;
+        color: white;
+        margin-top: -5px;
+       }
+       .btn{
+        width: 80%;
+        height: 30px;
+        padding-top: 12px;
+        margin-left: 10%;
+        background-color:  rgb(13, 131, 241);
+        color: #fff;
+       }
+       .bgb{
+        background-color: rgb(4, 4, 52);
+        width: 100vw;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+        height:190px ;
+        margin-top: 80px;
+       }
+       .cntnt{
+        padding-top: 40px;
+       }
+       .wb{
+        padding-top: 50px;
+       }
+       .wte{
+        display: inline-block;
+        background-color: #fff;
+        color: grey;
+        width: 150px;
+        height: 30px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        padding-top: 10px;
+        padding-left: 10px;
+       }
+       .blu{
+        display: inline-block;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-left: -4px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 30px;
+        width: 80px;
+        background-color:  rgb(13, 131, 241);
+       }
+       .pdng{
+        margin-top: -20px;
+       }
+       .footer{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        margin-top: 60px;
+       }
+       .foot{
+        color: grey;
+       }
+       .profile{
+        height: 30px;
+       }
+       .foot1{
+        text-align: center;
+        margin-top: 6%;
+       }
+       .fa {
+        padding: 5%;
+        font-size: 15px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        }
+       .fa-facebook {
+        background: rgb(13, 131, 241);
+        color: white;
+        border-radius: 50%;
+        width: 10px;
+        padding: 0;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        }
+        .fa-instagram {
+        background: white;
+        color: rgb(13, 131, 241);
+        border-radius: 50%;
+        }
+        .fa-twitter {
+        background: white;
+        color: rgb(13, 131, 241);
+        border-radius: 50%;
+        margin-left: -9px;
+        }
+    </style>
+</head>
+<body >
+
+    <div class="bg">
+        <nav class="navb">
+            <h2 class="i1 i">BrandName</h2>
+            <h5 class="i2 i">Home</h5>
+            <h5 class="i3 i">Product</h5>
+            <h5 class="i4 i ">Pricing</h5>
+            <h5 class="i5 i">Contact</h5>
+            <h5 class="box i">Get Quote Now &#8594;</h5>
+        </nav>
+        <form action="book appointment" class="form1">
+            <h1 class="f1">Book Appointment</h1>
+            <h5 class="f2">Name*</h5>
+            <input type="text" placeholder="Full Name*" class="f3">
+            <h5 class="f2">Email address</h5>
+            <input type="email" placeholder="example@gmail.com" class="f3">
+            <h5 class="f2">Department</h5>
+            <input type="text" placeholder="Please Select" class="f3">
+            <h5 class="f2">Time</h5>
+            <input type="text" placeholder="4:00 Available" class="f3">
+            <h5 class="button1">Book Appointment</h5>
+        </form>
+        <h1 class="b b1">Meet the Best <br> Hospital</h1>
+        <h5 class="b b2">We know how large objects will act,<br>but things on small scale</h5>
+        <h5 class="b b3">Get Quote Now</h5>
+        <h5 class="b4">Learn More</h5>
+    </div>
+
+    <h1 class="a1">Leading Medicine</h1>
+    <h5 class="a2">Problem trying to resolve the conflit between <br> the two major realms of classical physics : Newtoian mechanics </h5>
+
+    <div class="block">
+
+        <div class="block1">
+            <div class="blue">
+                <img src="asset2/added.png" alt="" class="im">
+                <h5 class="b12">Emergency Care</h5>
+            </div>
+            <div class="white">
+                <h5 class="data">-The best products start <br> with Figma</h5>
+                <h5 class="data">- Design with real data</h5>
+                <h5 class="data">- Lightining fast prototyping</h5>
+                <h5 class="data">- Fastest way to organize</h5>
+                <h5 class="data">- Work at speed of thoughts.</h5>
+                <h5 class="data datab"> Learn More</h5>
+            </div>   
+        </div>
+
+        <div class="block1">
+            <div class="blue">
+                <img src="asset2/added.png" alt="" class="im">
+                <h5 class="b12">Cancer Care</h5>
+            </div>
+            <div class="white">
+                <h5 class="data">-The best products start <br> with Figma</h5>
+                <h5 class="data">- Design with real data</h5>
+                <h5 class="data">- Lightining fast prototyping</h5>
+                <h5 class="data">- Fastest way to organize</h5>
+                <h5 class="data">- Work at speed of thoughts.</h5>
+                <h5 class="data datab"> Learn More</h5>
+            </div>   
+        </div>
+
+        <div class="block1">
+            <div class="blue">
+                <img src="asset2/added.png" alt="" class="im">
+                <h5 class="b12">Health Queries</h5>
+            </div>
+            <div class="white">
+                <h5 class="data">-The best products start <br> with Figma</h5>
+                <h5 class="data">- Design with real data</h5>
+                <h5 class="data">- Lightining fast prototyping</h5>
+                <h5 class="data">- Fastest way to organize</h5>
+                <h5 class="data">- Work at speed of thoughts.</h5>
+                <h5 class="data datab"> Learn More</h5>
+            </div>   
+        </div>
+
+    </div>
+    <h1 class="a1">Leading Medicine</h1>
+    <h5 class="a2">Problem trying to resolve the conflit between <br> the two major realms of classical physics : Newtoian mechanics </h5>
+    <div class="rating">
+        <div class="rating0">
+            <div class="rating1">
+                <p class="s ">&#11088;&#11088;&#11088;&#11088;</p>
+                <p class="s s1">&star;</p>
+                <h5 class="s2">State helps you see how many <br> more days you need to work to <br>reach your financial goal.</h5>
+                <img src="asset2/profile1.png" alt="" class="profile">
+            </div>
+        </div> 
+
+        <div class="rating0">
+            <div class="rating1">
+                <p class="s ">&#11088;&#11088;&#11088;&#11088;</p>
+                <p class="s s1">&star;</p>
+                <h5 class="s2">State helps you see how many <br> more days you need to work to <br>reach your financial goal.</h5>
+                <img src="asset2/profile2.png" alt="" class="profile">
+            </div>
+        </div> 
+
+        <div class="rating0">
+            <div class="rating1">
+                <p class="s ">&#11088;&#11088;&#11088;&#11088;</p>
+                <p class="s s1">&star;</p>
+                <h5 class="s2">State helps you see how many <br> more days you need to work to <br>reach your financial goal.</h5>
+                <img src="asset2/profile3.png" alt="" class="profile">
+            </div>
+        </div> 
+    </div>
+    <h1 class="a1">FAQ</h1>
+    <h5 class="a2">Problem trying to resolve the conflit between <br> the two major realms of classical physics : Newtoian mechanics </h5>
+    <div class="gr">
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+        <div>
+            <p class="arrow">&gt;</p>
+            <h4 class="gr2">the quick fox jumps over the</h4>
+            <h4 class="gr3">lazy dog</h4>
+            <h5 class="gr4">Things on a very small scale <br> behave like nothing</h5>
+        </div>
+    </div>
+    <h1 class="a1">Pricing</h1>
+    <h5 class="a2">Problem trying to resolve the conflit between <br> the two major realms of classical physics : Newtoian mechanics </h5>
+    <div class="price">
+        <div class="trans">
+            <h2 class="cntr">FREE</h2>
+            <h5 class="cntr">Organize across all <br> apps by hand</h5>
+            <h1 class="ze cntr">0</h1>
+            <h5 class="ze1">$ <br> Per Month</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="grey ">&#10003;</p>
+            <h5 class="g2">1GB Cloud storage</h5><br>
+            <p class="grey ">&#10003;</p>
+            <h5 class="g1 g3">Email and community <br>support</h5>
+            <h5 class="btn">Try for free</h5>
+            
+        </div>
+        <div class="violet">
+            <h2 class="cntr">STANDARD</h2>
+            <h5 class="cntr">Organize across all <br> apps by hand</h5>
+            <h1 class="ze cntr">9.99</h1>
+            <h5 class="ze1">$ <br> Per Month</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g2">1GB Cloud storage</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1 g3">Email and community <br>support</h5>
+            <h5 class="btn">Try for free</h5>
+        </div>
+        <div class="trans">
+            <h2 class="cntr">PREMIUM</h2>
+            <h5 class="cntr">Organize across all <br> apps by hand</h5>
+            <h1 class="ze cntr">19.99</h1>
+            <h5 class="ze1">$ <br> Per Month</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1">Unlimted product updates</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g2">1GB Cloud storage</h5><br>
+            <p class="green ">&#10003;</p>
+            <h5 class="g1 g3">Email and community <br>support</h5>
+            <h5 class="btn">Try for free</h5>
+        </div>
+    </div>
+
+    <div class="bgb">
+        <div class="cntnt">
+            <h1>Get in Touch</h1>
+            <p class="pdng">The greatest accumulation about atomic and <br> small-scale behaviour during the first quarter of 20th</p>
+        </div>
+        <div class="wb">
+            <h5 class="wte">Your Email</h5>
+            <h5 class="blu">Subscribe</h5>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="frst">
+            <h2>Get in Touch</h2>
+            <h5 class="foot">the quick fox jumps over the <br> lazy dog</h5>
+            <a href="#" class="fb fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        
+        <div class="scnd">
+            <h2>Company info</h2>
+            <h5 class="foot">About Us</h5>
+            <h5 class="foot">Carrier</h5>
+            <h5 class="foot">We are hiring</h5>
+            <h5 class="foot">Blog</h5>
+        </div>
+
+        <div class="thrd">
+            <h2>Features</h2>
+            <h5 class="foot">Bussiness Marketing</h5>
+            <h5 class="foot">User Analytic</h5>
+            <h5 class="foot">LIve Chat</h5>
+            <h5 class="foot">Unlimited Support</h5>
+        </div>
+
+        <div class="fourth">
+            <h2>Resources</h2>
+            <h5 class="foot">IOS & Android</h5>
+            <h5 class="foot">Watch a Demo</h5>
+            <h5 class="foot">Customer</h5>
+            <h5 class="foot">API</h5>
+        </div>
+    </div>
+
+    <h5 class="foot foot1">Made With Love By Figmaland All Right Reserved</h5>
+</body>
+</html>
